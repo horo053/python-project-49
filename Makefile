@@ -9,3 +9,10 @@ build:
 
 package-install:
 	uv tool install dist/hexlet_code-0.1.0-py3-none-any.whl
+
+# команда для 3 шага проекта: переустановка пакета
+package-reinstall:
+	uv tool install --force dist/hexlet_code-0.1.0-py3-none-any.whl
+
+lint:
+	uv run ruff check brain_games
