@@ -1,26 +1,13 @@
 from brain_games.games import calculation_game
 from brain_games.scripts import brain_games
+from brain_games import cycle_of_rounds
 
 def calculation():
     name = brain_games.greet()
 
     print('What is the result of the expression?')
 
-    count_correct_answers = 0
-
-    for _ in range(3):
-        user_answer, correct_answer = calculation_game.calculation_game()
-
-        if int(user_answer) == int(correct_answer):
-            print('Correct!')
-            count_correct_answers += 1
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f'Let\'s try again, {name}!')
-            break
-
-    if count_correct_answers == 3:
-        print(f'Congratulations, {name}!')
+    cycle_of_rounds.cycle_of_rounds(calculation_game.calculation_game, name)
 
 
 def main():
