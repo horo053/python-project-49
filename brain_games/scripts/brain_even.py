@@ -1,4 +1,4 @@
-from random import randint
+from brain_games.games import even_check_game
 import prompt
 
 
@@ -11,13 +11,7 @@ def even_check():
     count_correct_answers = 0
 
     for _ in range(3):
-        number = randint(1, 100)
-        print(f'Question: {number}')
-
-        is_even = number % 2 == 0
-        correct_answer = 'yes' if is_even else 'no'
-
-        user_answer = input('Your answer: ')
+        user_answer, correct_answer = even_check_game.even_check_game()
 
         if user_answer == correct_answer:
             print('Correct!')
