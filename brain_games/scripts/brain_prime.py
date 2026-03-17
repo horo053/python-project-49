@@ -1,10 +1,9 @@
 from brain_games.games import prime_number_game
-import prompt
+from brain_games.scripts import brain_games
 
 def prime_number():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = brain_games.greet()
+
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     count_correct_answers = 0

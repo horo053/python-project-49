@@ -1,10 +1,9 @@
 from brain_games.games import calculation_game
-import prompt
+from brain_games.scripts import brain_games
 
 def calculation():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = brain_games.greet()
+
     print('What is the result of the expression?')
 
     count_correct_answers = 0

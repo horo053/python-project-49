@@ -1,10 +1,9 @@
 from brain_games.games import arithmetic_progression_game as apg
-import prompt
+from brain_games.scripts import brain_games
 
 def arithmetic_progression():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = brain_games.greet()
+
     print('What number is missing in the progression?')
 
     count_correct_answers = 0

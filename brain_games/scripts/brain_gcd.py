@@ -1,10 +1,9 @@
 from brain_games.games import nod_game
-import prompt
+from brain_games.scripts import brain_games
 
 def nod():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = brain_games.greet()
+
     print('Find the greatest common divisor of given numbers.')
 
     count_correct_answers = 0

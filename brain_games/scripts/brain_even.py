@@ -1,11 +1,10 @@
 from brain_games.games import even_check_game
-import prompt
+from brain_games.scripts import brain_games
 
 
 def even_check():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = brain_games.greet()
+
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     count_correct_answers = 0
