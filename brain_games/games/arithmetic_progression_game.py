@@ -1,4 +1,6 @@
 from random import randint
+from typing import Any
+
 
 def arithmetic_progression_game():
     start = randint(1, 25)
@@ -16,7 +18,7 @@ def arithmetic_progression_game():
     correct_answer = progression[index_num]
     progression[index_num] = '..'
 
-    print(f'Question: {progression}')
+    print(f'Question:', *progression)
 
     user_answer = input('Your answer: ')
 
