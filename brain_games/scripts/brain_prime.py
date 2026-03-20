@@ -5,7 +5,7 @@ from brain_games import cycle_of_rounds
 def prime_number():
     name = brain_games.greet()
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     cycle_of_rounds.cycle_of_rounds(prime_number_game.prime_number_game, name)
 
