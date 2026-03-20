@@ -6,7 +6,7 @@ def prime_number_game():
 
     list_del = []
     del_num = number
-    for _ in range(1, number):
+    for _ in range(1, number+1):
         if number % del_num == 0:
             list_del.append(del_num)
         del_num -= 1
