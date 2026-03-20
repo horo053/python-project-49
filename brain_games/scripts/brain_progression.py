@@ -1,6 +1,7 @@
+from brain_games import cycle_of_rounds
 from brain_games.games import arithmetic_progression_game as apg
 from brain_games.scripts import brain_games
-from brain_games import cycle_of_rounds
+
 
 def arithmetic_progression():
     name = brain_games.greet()

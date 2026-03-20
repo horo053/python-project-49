@@ -1,6 +1,7 @@
+from brain_games import cycle_of_rounds
 from brain_games.games import nod_game
 from brain_games.scripts import brain_games
-from brain_games import cycle_of_rounds
+
 
 def nod():
     name = brain_games.greet()

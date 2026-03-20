@@ -8,7 +8,8 @@ def cycle_of_rounds(func_game, name):
             print('Correct!')
             count_correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             break
 
     if count_correct_answers == 3:

@@ -1,5 +1,6 @@
 from random import randint
 
+
 def even_check_game():
     number = randint(1, 100)
     print(f'Question: {number}')

@@ -1,6 +1,7 @@
+from brain_games import cycle_of_rounds
 from brain_games.games import calculation_game
 from brain_games.scripts import brain_games
-from brain_games import cycle_of_rounds
+
 
 def calculation():
     name = brain_games.greet()

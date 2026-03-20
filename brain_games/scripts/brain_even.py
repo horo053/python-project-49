@@ -1,6 +1,6 @@
+from brain_games import cycle_of_rounds
 from brain_games.games import even_check_game
 from brain_games.scripts import brain_games
-from brain_games import cycle_of_rounds
 
 
 def even_check():

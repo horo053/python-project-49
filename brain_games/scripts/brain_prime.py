@@ -1,6 +1,7 @@
+from brain_games import cycle_of_rounds
 from brain_games.games import prime_number_game
 from brain_games.scripts import brain_games
-from brain_games import cycle_of_rounds
+
 
 def prime_number():
     name = brain_games.greet()
