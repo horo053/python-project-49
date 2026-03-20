@@ -4,7 +4,7 @@ def cycle_of_rounds(func_game, name):
     for _ in range(3):
         user_answer, correct_answer = func_game()
 
-        if int(user_answer) == int(correct_answer):
+        if str(user_answer) == str(correct_answer):
             print('Correct!')
             count_correct_answers += 1
         else:
